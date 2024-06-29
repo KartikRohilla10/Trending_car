@@ -1,38 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#logo {
+  height: 38.26px;
+  width: 156px;
+  margin-top: 11px;
+  margin-left: 80px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text {
+  width: 128px;
+  height: 17px;
+  margin-top: 23px;
+  margin-left: 250px;
+  font-family: Lato, sans-serif, Times;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  position: absolute;
+}
+
+.search {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 480px;
+}
+.search input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.search input::placeholder {
+  font-family: Lato, sans-serif, Times;
+  font-weight: 400;
+  font-size: 14px;
+}
+.search input:focus {
+  outline: none;
+}
+.search button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.nav_button {
+  border: none;
+  background: white;
+
+  margin-left: 770px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.login {
+  position: absolute;
+  margin-left: 1090px;
+  margin-top: 21px;
+  cursor: pointer;
+  font-family: Lato, sans-serif, Times;
+  font-weight: 400;
+}
+
+.nav1 {
+  align-items: center;
+}
+.nav1 ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-left: 45px;
+}
+
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 381.5px;
+  width: 100vw;
+  background-size: contain;
+  background-image: url(./assets/images/landscape_img1.png);
+}
+
+.banner p {
+  font-family: Lato, sans-serif, Times;
   color: white;
+  font-weight: bold;
+}
+.banner #small {
+  font-size: 18px;
+  margin: 34px 0 8px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.banner #large {
+  font-size: 48px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.find {
+  width: 620px;
+  height: 42px;
+  display: flex;
+  position: relative;
+  margin: 12px 0 0 0;
+}
+
+.find input {
+  width: inherit;
+  height: inherit;
+  border-radius: 6px;
+  border: none;
+  font-size: 12px;
+  padding-left: 10px;
+  display: block;
+}
+
+.find input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.find input:focus {
+  outline: none;
+}
+
+.find button {
+  height: 38px;
+  width: 135px;
+  top: 3px;
+  right: 4px;
+  position: absolute;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background-color: hsl(215, 100%, 41%);
+  font-family: Lato, sans-serif, Times;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.slider {
+  /* background-color: black; */
+  height: 190px;
+  width: 600px;
+  margin: 15px 0 0 0;
+  background-image: url(./assets/images/slider-cars.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
